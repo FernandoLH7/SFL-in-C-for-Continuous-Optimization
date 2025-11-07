@@ -1,7 +1,4 @@
 # SFL for robotics — intuition → code mapping (focused on how this repo works)
-
-> This note explains **how the SFL algorithm in `src/sfl.c` behaves** and how to read it from a **robotics** perspective. It stays practical and tied to the code (no repo logistics here).
-
 ---
 
 ## 1) Intuition: groups of frogs looking for “food”
