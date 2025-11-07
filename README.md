@@ -1,5 +1,6 @@
-# SFL for robotics — intuition → code mapping (focused on how this repo works)
+# SFL for robotics — intuition → code mapping
 ---
+Inspired by the group-foraging behavior of frogs, SFL splits the population into memeplexes that repeatedly pull the worst frog toward better exemplars (or the global best), with periodic shuffling to mix information.
 
 ## 1) Intuition: groups of frogs looking for “food”
 ![Memeplex intuition](../docs/memeplex_food.png)
