@@ -46,7 +46,7 @@ Code path:
 
 ---
 
-## 4) Reading the run like a roboticist
+## 4) Reading the results obtained in sphere.md using sfl.c
 
 Your screenshot (Sphere, `R=3`, `P=20`, `M=5`, `J_MAX=5`, `MAX_ITERS=100`) shows:
 
