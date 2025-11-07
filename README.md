@@ -2,6 +2,8 @@
 ---
 Inspired by the group-foraging behavior of frogs, SFL splits the population into memeplexes that repeatedly pull the worst frog toward better exemplars (or the global best), with periodic shuffling to mix information.
 
+![Memeplex intuition](/docs/frog.gif)
+
 ## 1) Intuition: groups of frogs looking for “food”
 ![Memeplex intuition](/docs/memeplex_food.png)
 
