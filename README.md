@@ -55,11 +55,11 @@ You can take a look into sphere.md and see the results obtained. Here is a brief
 - **Late phase (~60 → 100):** a small **plateau** around $\(4.72\times10^{-4}\)$. Jumps are capped by `D_MAX` and the population is already clustered; improvements are tiny and may be hidden by print precision.
 
 ### Sanity-check (does the position match the fitness?)
-Take the final best position and square–sum its coordinates (Sphere = \(\sum x_i^2\)):
+Take the final best position and square–sum its coordinates $(Sphere = \(\sum x_i^2\))$:
 
-- \( (-0.00244627)^2 \approx 5.98\times10^{-6} \)
-- \( (-0.00497473)^2 \approx 2.47\times10^{-5} \)
-- \( (-0.02099504)^2 \approx 4.41\times10^{-4} \)
+- $\( (-0.00244627)^2 \approx 5.98\times10^{-6} \)$
+- $\( (-0.00497473)^2 \approx 2.47\times10^{-5} \)$
+- $\( (-0.02099504)^2 \approx 4.41\times10^{-4} \)$
 
 Adding them:
 \[
