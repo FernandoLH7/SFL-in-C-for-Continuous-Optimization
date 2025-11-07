@@ -10,9 +10,7 @@ output of a real run (your screenshot).
 
 In $\mathbb{R}^d$ the Sphere function is
 
-$$
-\operatorname{Sphere}(\mathbf{x})=\sum_{i=1}^{d} x_i^2.
-$$
+$\mathbf{x})=\sum_{i=1}^{d} x_i^2$.
 
 It’s convex, strictly unimodal, and separable. The unique global minimizer is
 $\mathbf{x}^\*=\mathbf{0}$ with $f(\mathbf{x}^\*)=0$. Because the landscape is smooth and
