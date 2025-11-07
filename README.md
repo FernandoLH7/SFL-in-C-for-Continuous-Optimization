@@ -62,11 +62,11 @@ Take the final best position and square–sum its coordinates $(Sphere = \(\sum 
 - $\( (-0.02099504)^2 \approx 4.41\times10^{-4} \)$
 
 Adding them:
-\[
+$\[
 5.98\times10^{-6} + 2.47\times10^{-5} + 4.41\times10^{-4}
 \;\approx\; 4.72\times10^{-4},
-\]
-which is exactly the printed **Best fitness \(\approx 0.00047152\)**. That confirms the run is behaving correctly on Sphere (global minimum at \(\mathbf{x}=\mathbf{0}\)).
+\]$
+which is exactly the printed **Best fitness \(\approx 0.00047152\)**. That confirms the run is behaving correctly on Sphere (global minimum at \$(\mathbf{x}=\mathbf{0}\)$).
 
 ### If you want to squeeze a bit more at the end
 - Increase **local effort**: `J_MAX` from 5 → 7–10.  
