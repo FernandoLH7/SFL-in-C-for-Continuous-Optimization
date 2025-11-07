@@ -14,7 +14,7 @@ Inspired by the group-foraging behavior of frogs, SFL splits the population into
 ---
 
 ## 2) From sorted population to memeplexes (and multi-objective note)
-![Sorted → fronts → memeplexes](../docs/sfl_pareto_partition.png)
+![Sorted → fronts → memeplexes](/docs/sfl_pareto_partition.png)
 
 - We **sort** the population by fitness (best at the top).  
 - Then we assign frogs **round-robin** into `M` memeplexes so each group gets a mix of qualities.  
@@ -27,7 +27,7 @@ Code hooks:
 ---
 
 ## 3) What actually moves a frog (sub-memeplex update)
-![Local update of worst frog](../docs/sfl_submemeplex_update.png)
+![Local update of worst frog](/docs/sfl_submemeplex_update.png)
 
 Inside each memeplex we run `J_MAX` **local steps**. Each step tries to **repair the worst frog**:
 
