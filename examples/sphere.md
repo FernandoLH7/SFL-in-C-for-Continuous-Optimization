@@ -2,7 +2,7 @@
 
 This note goes deeper than the README. It formalizes the Sphere objective, explains the
 Shuffled Frog-Leaping (SFL) loop used here, maps ideas to the C code, and walks through the
-output of a real run (your screenshot).
+output of a real run.
 
 ---
 
