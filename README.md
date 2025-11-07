@@ -3,7 +3,7 @@
 Inspired by the group-foraging behavior of frogs, SFL splits the population into memeplexes that repeatedly pull the worst frog toward better exemplars (or the global best), with periodic shuffling to mix information.
 
 ## 1) Intuition: groups of frogs looking for “food”
-![Memeplex intuition](../docs/memeplex_food.png)
+![Memeplex intuition](SFL-in-C-for-Continuous-Optimization/docs/memeplex_food.png)
 
 - Each **frog** = one candidate solution (a real vector `x ∈ ℝ^R`).
 - The **food** bubble = the **objective minimum** (in this repo we start with **Sphere**).
