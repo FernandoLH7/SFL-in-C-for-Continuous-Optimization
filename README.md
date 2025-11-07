@@ -34,7 +34,7 @@ Inside each memeplex we run `J_MAX` **local steps**. Each step tries to **repair
 1. **Jump toward memeplex best:**  
    $\mathbf{x}' = \mathbf{x}_w + r\cdot(\mathbf{x}_b-\mathbf{x}_w),\quad r \sim U(0,1)$
    and we **cap each component** by `D_MAX` and **clamp** to `[X_MIN, X_MAX]`.  
-2. If that didn’t help, **jump toward the global best** \(\mathbf{x}_g\).  
+2. If that didn’t help, **jump toward the global best** $\mathbf{x}_g\$.  
 3. If still worse, **random re-init** (diversity refresh).
 
 Code path:
