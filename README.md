@@ -48,5 +48,32 @@ Code path:
 
 ## 4) Reading the results obtained in sphere.md using sfl.c
 
-Your screenshot (Sphere, `R=3`, `P=20`, `M=5`, `J_MAX=5`, `MAX_ITERS=100`) shows:
+You can take a look into sphere.md and see the results obtained. Here is a brief description and discussion about the solution acquired.
+
+### What the results shown
+- **Early phase (Iter 0 → ~20):** a big drop. Memeplexes drag their **worst** frogs toward strong exemplars, so fitness collapses quickly.
+- **Middle phase (~20 → ~60):** steady tightening. The population concentrates near the origin as local repairs keep working.
+- **Late phase (~60 → 100):** a small **plateau** around \(4.72\times10^{-4}\). Jumps are capped by `D_MAX` and the population is already clustered; improvements are tiny and may be hidden by print precision.
+
+### Sanity-check (does the position match the fitness?)
+Take the final best position and square–sum its coordinates (Sphere = \(\sum x_i^2\)):
+
+- \( (-0.00244627)^2 \approx 5.98\times10^{-6} \)
+- \( (-0.00497473)^2 \approx 2.47\times10^{-5} \)
+- \( (-0.02099504)^2 \approx 4.41\times10^{-4} \)
+
+Adding them:
+\[
+5.98\times10^{-6} + 2.47\times10^{-5} + 4.41\times10^{-4}
+\;\approx\; 4.72\times10^{-4},
+\]
+which is exactly the printed **Best fitness \(\approx 0.00047152\)**. That confirms the run is behaving correctly on Sphere (global minimum at \(\mathbf{x}=\mathbf{0}\)).
+
+### If you want to squeeze a bit more at the end
+- Increase **local effort**: `J_MAX` from 5 → 7–10.  
+- Add a few individuals: `P` from 20 → ~30.  
+- Reduce print noise: print every 10 iters, or add an early-stop like `if (best_fitness < 1e-5) break;`.
+
+> Note: exact numbers vary with the RNG seed; the convergence shape (big early drop → gentle tail) should remain the same.
+
 
